@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to right, #414ce1 0%, #72c7b3 50%, #000000 100%);  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 344px;
+  height: 69px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #dd0e3e;
+  color: #000000;
+  outline: 0;
+  text-decoration: none;
+  display: block;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+}
+
+.button.white-button {
+  background-color: #FFFFFF;
+}
+
+.button.white-button:hover {
+  background-color: #a4b32e;
+}
+
+.header {
+  padding: 46px 0;
+  margin-bottom: 50px; 
+}
+
+.header .container {  
+  display: flex; 
+  align-items: center;
+}
+
+header .logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+}
+
+.logo-black {
+  color: black;
+}
+
+.logo-red {
+  color: red;
+  /* точно такой же, как в кнопках по дизайну */
+}
+
+.logo img {
+  max-width: 129px;
+  vertical-align: bottom;
+}
+
+/* header .presentation {
+  margin: 30px 0;
+  background: url('./assets/images/bg_1.png');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-color: #8d8989;
+  position: relative;
+} */
+
+/* header .presentation::after {
+  content: "Добро пожаловать в магазин VR- игр! Лучшие игры для вас! ";
+  position: absolute;
+  top: 180px;
+  left: 50px;
+  width: 300px;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+header .presentation::before {
+  content: "по самым доступным ценам";
+  position: absolute;  
+  top: 350px;
+  left: 50px;
+  width: 300px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fafcffcc;
+  margin-bottom: 320px;
+}
+header .headline {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 20px;
+} */
+
+/* header ul.menu {
+ float: inline-end;
+  margin-left: 177px;
+  margin-right: auto;
+  list-style: none;
+  gap: 75px;
+}
+
+header ul.menu li {
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+header ul.menu li a {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+header ul.menu li a:hover {
+  color: #F8FF23;
+}
+
+.phone {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: normal;
+} */
+
+.menu {
+  margin-left: 177px;
+  margin-right: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 75px;
+}
+
+.menu ul a {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.menu ul a:hover {
+  color: #F8FF23;
+}
+
+.phone {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: normal;
+}
+
+.main { 
+  position: relative;
+  padding-bottom: 78px;
+}
+
+.main-content {
+  padding-top: 100px;
+  padding-bottom: 175px;
+}
+
+.main-content .container {
+  position: relative;
+}
+
+.main-info {
+  max-width: 755px;
+}
+
+.main-info h1 {
+  font-size: 80px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  color: #dce1e8;
+  font-weight: normal;
+}
+
+.main-info p {
+  font-size: 24px;
+  line-height: 120%;
+  color: #fff9f9;
+  max-width: 478px;
+  margin-bottom: 60px;
+}
+
+.main-image {
+  position: absolute;
+  top: -208px;
+  right: -376px;
+  z-index: -1;
+}
+
+.main-image img {
+  width: auto;
+  height: 400px;
+}
+
+.black-block {
+  position: absolute;
+  width: 400px;
+  height: 2528px;
+  top: 0;
+  background-color: #000000;
+  z-index: -2;
+  right: calc(50% - 780px);
+}
+
+/* Блок с играми */
+.games {
+  background-color: #000000;
+  padding: 140px 0;
+}
+
+.games h2 {
+  font-size: 65px;
+  color: #dce1e8;
+  font-weight: normal;
+}
+
+.games-content {
+  display: flex;
+  padding-top: 60px;
+}
+
+.games-filter {
+  margin-right: 77px;
+  align-self: flex-start;
+  position: sticky;
+  top: 20px;
+}
+
+.games-filter ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  list-style: none;
+}
+
+.games-filter ul li {
+  width: 127px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  font-size: 16px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+}
+
+.games-filter ul li.active,
+.games-filter ul li:hover {
+  color: #F8FF23;
+  border-color: #F8FF23;
+}
+
+/* Блок информации об играх */
+
+.games-items {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 30px;
+}
+
+.game {
+  background-color: #8e8b8b;
+  padding: 60px;
+  display: flex;
+}
+
+.game img {
+  max-width: 468px;
+}
+
+.game-details {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.game-details h4 {
+  font-size: 30px;
+  line-height: 120%;
+  margin-bottom: 20px;
+  color: #dce1e8;
+}
+
+.game-details p {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: normal;
+  color: #f6f1f1;
+  height: 100px;
+}
+
+.game-action {
+  margin-top: auto;
+}
+
+.game-action ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.game-price {
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.game-action .button {
+  width: 444px;
+}
+
+.game {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Блок с формой для заказа игры */
+
+.order {
+  overflow: hidden;
+  padding-top: 105px;
+  padding-bottom: 40px;
+  background: linear-gradient(to right, #414ce1 0%, #72c7b3 50%, #000000 100%);
+}
+
+.order .container {
+  position: relative;
+  padding-bottom: 121px;
+}
+
+.order .sub-title {
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 100%;
+  margin-bottom: 40px;
+  color: #dce1e8;
+}
+
+.order-text {
+  font-size: 24px;
+  line-height: 120%;
+  color: #d4d4d4;
+  margin-bottom: 60px;
+  max-width: 555px;
+}
+
+.order-form {
+  max-width: 544px;
+}
+
+.order-input {
+  padding: 22px 18px;
+  gap: 10px;
+  width: 544px;
+  height: 65px;
+  background: #FFFFFF;
+  border: 1px solid #5D5D5F;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #000000;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.order-input::placeholder {
+  color: #5D5D5F;
+}
+
+.order .button {
+  width: 100%;
+}
+
+.orders-image {
+  position: absolute;
+  bottom: 140px;
+  left: 600px;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Футер */
+.footer {
+  padding: 47px 0;
+  border-top: 1px solid #5f5f5f;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.rights {
+  font-size: 18px;
+  right: 40px;
+  line-height: 90%;
+  letter-spacing: normal;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  color: #f6f1f1;
+}
+
+.rights .text-black {
+  color: #000000;
+}
+
+.rights .text-red {
+  color: #dd0e3e;
+}
+
+/* Слайдер*/
+.game-slider-container {
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(90deg, #8066FF 0%, #66CCFF 100%);
+  padding: 20px 0;
+}
+
+.game-slider-track {
+  display: flex;
+  width: max-content;
+  animation: scrollSlider 20s linear infinite;
+}
+
+.game-slide {
+  flex-shrink: 0;
+  width: 100px;
+  margin: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.game-slide img {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.game-slide:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 450px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Стили для текста в модальном окне */
+.modal-content h3 {
+  color: #333;
+  font-size: 28px;
+  /* Цвет заголовка */
+  margin-bottom: 10px;
+  /* Отступ снизу для заголовка */
+}
+
+.modal-content p {
+  color: #333;
+  /* Цвет описания */
+  margin-bottom: 10px;
+  /* Отступ снизу для описания */
+}
+
+.modal-content .game-price {
+  color: #333;
+  /* Цвет цены */
+  margin-bottom: 10px;
+  /* Отступ снизу для цены */
+}
+
+.about-us {
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #0f101e 0%, #1c1f30 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-text h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  color: #00bfff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-text .subtitle {
+  display: block;
+  font-size: 28px;
+  color: #ff0066;
+  font-weight: 500;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2);
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #f0f0f0;
+  margin-bottom: 18px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.06);
+}
+
+/* Команда */
+.our-team {
+  margin-top: 80px;
+  padding: 20px 40px;
+  background: linear-gradient(145deg, #1f1f2e, #2b2c3f);
+  border-radius: 16px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.our-team h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #00bfff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1 1 280px;
+  background: #ffffff10;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.team-member img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.1);
+}
+
+.team-member h3 {
+  margin: 10px 0 8px;
+  font-size: 22px;
+  color: #00bfff;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #dddddd;
+  line-height: 1.6;
+}
